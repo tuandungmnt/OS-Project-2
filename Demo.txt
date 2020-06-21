@@ -1,0 +1,111 @@
+td@phevat:~/OSP2$ g++ main.cpp user.cpp folder.cpp file.cpp data.cpp sup.cpp -o in
+td@phevat:~/OSP2$ ./in
+
+ createUser or login: createUser
+
+ Enter Username: Dung
+
+ Enter Password: 123
+
+ publicws or privatews: privatews
+
+ PrivateWorkspace/: create a1
+
+ PrivateWorkspace/: open a1
+
+ PrivateWorkspace/a1/: create a2
+
+ PrivateWorkspace/a1/: create a3
+
+ PrivateWorkspace/a1/: createf f1
+
+ PrivateWorkspace/a1/: createf f2 
+
+ PrivateWorkspace/a1/: writelist
+
+ Folder: a2 a3 
+ File: f1 f2 
+
+ PrivateWorkspace/a1/: openf f1
+
+ PrivateWorkspace/a1/f1/: setsize 10
+
+ PrivateWorkspace/a1/f1/: setblock 0 ABC
+
+ PrivateWorkspace/a1/f1/: setblock 1 DEF
+
+ PrivateWorkspace/a1/f1/: close
+
+ PrivateWorkspace/a1/: close
+
+ PrivateWorkspace/: copy a1
+
+ PrivateWorkspace/: close
+
+ publicws or privatews: publicws
+
+ PublicWorkspace/: paste
+
+ PublicWorkspace/: writelist
+
+ Folder: a1 
+ File: 
+
+ PublicWorkspace/: open a1
+
+ PublicWorkspace/a1/: writelist
+
+ Folder: a2 a3 
+ File: f1 f2 
+
+ PublicWorkspace/a1/: openf f1
+
+ PublicWorkspace/a1/f1/: getsize   
+
+ 10
+
+ PublicWorkspace/a1/f1/: getblock 0
+
+ ABC
+
+ PublicWorkspace/a1/f1/: getblock 1
+
+ DEF
+
+ PublicWorkspace/a1/f1/: close
+
+ PublicWorkspace/a1/: close
+
+ PublicWorkspace/: close
+
+ publicws or privatews: logout
+
+ createUser or login: createUser
+
+ Enter Username: Phuc
+
+ Enter Password: 321
+
+ publicws or privatews: publicws
+
+ PublicWorkspace/: writelist
+
+ Folder: a1 
+ File: 
+
+ PublicWorkspace/: open a1
+
+ PublicWorkspace/a1/: writelist
+
+ Folder: a2 a3 
+ File: f1 f2 
+
+ PublicWorkspace/a1/: close
+
+ PublicWorkspace/: close
+
+ publicws or privatews: logout
+
+ createUser or login: exit
+td@phevat:~/OSP2$ 
+
